@@ -87,8 +87,15 @@
           type="submit"
           value="proceed to checkout"
           class="submit-btn"
+          id="proceed"
           onclick="checkout()"
         />
+        <script>
+          var btn = document.getElementById("proceed");
+          btn.onclick = function () {
+            window.open("../HTML/delivery.html");
+          };
+        </script>
       </form>
     </div>
     <!-- <script src="../js/getaway.js"></script> -->
